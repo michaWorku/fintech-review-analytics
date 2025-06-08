@@ -1,0 +1,11 @@
+# requirements.txt
+pandas
+numpy
+textblob
+scikit-learn
+nltk
+matplotlib
+seaborn
+google-play-scraper
+jupyter
+pytest

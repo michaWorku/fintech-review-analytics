@@ -1,3 +1,22 @@
+# Python artifacts
+__pycache__/
+*.pyc
+.venv/
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data
+#data/
+#outputs/
+
+# VSCode
+.vscode/
+
+# OS junk
+.DS_Store
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
