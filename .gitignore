@@ -8,8 +8,8 @@ __pycache__/
 .ipynb_checkpoints/
 
 # Data
-data/
-outputs/
+#data/
+#outputs/
 
 # VSCode
 .vscode/
