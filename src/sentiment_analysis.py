@@ -88,10 +88,10 @@ def load_data(path):
 def analyze_sentiment(df, text_col="review"):
     """ Analyze sentiment of reviews in the DataFrame."""
     df[text_col] = df[text_col].astype(str)
-    df["cleaned_text"] = df[text_col].apply(preprocess_text)
-    df["textblob_sentiment"] = df["cleaned_text"].apply(get_textblob_sentiment)
-    df["vader_sentiment"] = df["cleaned_text"].apply(get_vader_sentiment)
-    df = get_transformer_sentiment(df, text_col="cleaned_text")
+    df["cleaned_review"] = df[text_col].apply(preprocess_text)
+    df["textblob_sentiment"] = df["cleaned_review"].apply(get_textblob_sentiment)
+    df["vader_sentiment"] = df["cleaned_review"].apply(get_vader_sentiment)
+    df = get_transformer_sentiment(df, text_col="cleaned_review")
     return df
 
 
@@ -122,28 +122,12 @@ def plot_sentiments(df):
 
 def save_results(df):
     """ Save the DataFrame with sentiment analysis results to CSV."""
+    # Drop rows where cleaned_review is NaN or empty
+    df = df[df['cleaned_review'].notna()]
+    df = df[df['cleaned_review'].str.strip() != ""]
     df.to_csv(OUTPUT_PATH, index=False)
     print(f"✅ Sentiment analysis results saved to {OUTPUT_PATH}")
 
-# TF-IDF
-def extract_keywords(corpus):
-    """ Extract keywords from a corpus using TF-IDF vectorization.
-    Returns the top 30 keywords."""
-    vectorizer = TfidfVectorizer(max_features=30, stop_words='english')
-    X = vectorizer.fit_transform(corpus)
-    # Get top keywords
-    keywords = vectorizer.get_feature_names_out()
-    print("Top Keywords:", keywords)
-    return keywords
-
-def plot_wordcloud(words, title):
-    """ Generate and plot a word cloud from a list of words."""
-    wordcloud = WordCloud(width=800, height=400, background_color='white').generate(' '.join(words))
-    plt.figure(figsize=(10, 5))
-    plt.imshow(wordcloud, interpolation='bilinear')
-    plt.axis('off')
-    plt.title(title)
-    plt.show()
 
 if __name__ == "__main__":
     df = load_data("data/clean/cleaned_reviews.csv")
