@@ -9,3 +9,5 @@ seaborn
 google-play-scraper
 jupyter
 pytest
+transformers
+wordcloud
