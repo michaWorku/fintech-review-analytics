@@ -1,4 +1,4 @@
-review,rating,date,bank,source,cleaned_text,textblob_sentiment,vader_sentiment,transformer_sentiment,transformer_score
+review,rating,date,bank,source,cleaned_review,textblob_sentiment,vader_sentiment,transformer_sentiment,transformer_score
 really am happy to this app it is Siple to use everything,5,2025-06-07,CBE,Google Play,really happy app siple use everything,positive,positive,POSITIVE,0.9997885823249817
 I liked this app. But the User interface is very basic and not attractive at all.,2,2025-06-07,CBE,Google Play,liked app user interface basic attractive,positive,positive,POSITIVE,0.9996671676635742
 """Why don’t your ATMs support account-to-account transfers like other countries( Kenya, Nigeria , South africa)""",4,2025-06-06,CBE,Google Play,atm support transfer like country kenya nigeria south africa,neutral,positive,NEGATIVE,0.8313249945640564
@@ -15,7 +15,6 @@ Best Mobile Banking app ever,5,2025-06-04,CBE,Google Play,best mobile banking ap
 good,5,2025-06-04,CBE,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 it was good app but it have some issues like it doesnt give me the right amount that I have in the bank and have some issues in transferring,2,2025-06-04,CBE,Google Play,good app issue like doesnt give right amount bank issue transferring,positive,positive,POSITIVE,0.9678292870521545
 Good,5,2025-06-04,CBE,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
-👌👍,5,2025-06-04,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 very niec,5,2025-06-04,CBE,Google Play,niec,neutral,neutral,POSITIVE,0.5998039841651917
 best app of finance,5,2025-06-04,CBE,Google Play,best app finance,positive,positive,POSITIVE,0.9994705319404602
 yetemeta,1,2025-06-03,CBE,Google Play,yetemeta,neutral,neutral,POSITIVE,0.655367374420166
@@ -57,7 +56,6 @@ Ronaldo 🇵🇹 🥇,5,2025-05-25,CBE,Google Play,ronaldo,neutral,neutral,POSIT
 mortuary app,5,2025-05-25,CBE,Google Play,mortuary app,neutral,neutral,NEGATIVE,0.7924917340278625
 it is smart app but it has stoped after some period of time on my device with out any reason .,5,2025-05-25,CBE,Google Play,smart app stoped period time device reason,positive,positive,NEGATIVE,0.9639247059822083
 amazing app I am used this app for one year,4,2025-05-24,CBE,Google Play,amazing app used app one year,positive,positive,POSITIVE,0.9996716976165771
-👍,5,2025-05-24,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 good app,5,2025-05-24,CBE,Google Play,good app,positive,positive,POSITIVE,0.9998493194580078
 i love it 😍😘,5,2025-05-24,CBE,Google Play,love,positive,positive,POSITIVE,0.9998735189437866
 It makes life easy!👌,5,2025-05-24,CBE,Google Play,make life easy,positive,positive,POSITIVE,0.999527096748352
@@ -205,7 +203,6 @@ it's very good 👍 app,5,2025-04-27,CBE,Google Play,good app,positive,positive,
 I need support you,5,2025-04-27,CBE,Google Play,need support,neutral,positive,NEGATIVE,0.9610944390296936
 the worst Mobile banking i have ever seen in my life,1,2025-04-26,CBE,Google Play,worst mobile banking ever seen life,negative,negative,NEGATIVE,0.9997971653938293
 super,5,2025-04-26,CBE,Google Play,super,positive,positive,POSITIVE,0.998783528804779
-ጠጀጨገጀ።ጀገ,5,2025-04-26,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 i like the app,5,2025-04-26,CBE,Google Play,like app,neutral,positive,POSITIVE,0.9840216040611267
 the Best,1,2025-04-26,CBE,Google Play,best,positive,positive,POSITIVE,0.9997941851615906
 nice,5,2025-04-26,CBE,Google Play,nice,positive,positive,POSITIVE,0.9998552799224854
@@ -216,7 +213,6 @@ tank's,5,2025-04-25,CBE,Google Play,tank,neutral,neutral,NEGATIVE,0.997677266597
 its good but add more features such like. bank statement showing,5,2025-04-24,CBE,Google Play,good add feature like bank statement showing,positive,positive,POSITIVE,0.9995161294937134
 it is so nice,5,2025-04-24,CBE,Google Play,nice,positive,positive,POSITIVE,0.9998552799224854
 good,5,2025-04-21,CBE,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
-Very Good👍,5,2025-04-21,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 "my first frequent experience of cbe app is critical-time failure such as suspending payment on air for 2-5 days with zero explanation, deducting from sender account without depositing to the receiver act. Another fatal error by the banking company as a whole (not the app itself though) is forced-banking with corporations without consent of employers-users of the corresponding corporations",2,2025-04-21,CBE,Google Play,first frequent experience cbe app failure suspending payment air day zero explanation deducting sender account without depositing receiver act another fatal error banking company whole app though corporation without consent corresponding corporation,positive,negative,NEGATIVE,0.9965302348136902
 "wow, amazing app",5,2025-04-21,CBE,Google Play,wow amazing app,positive,positive,POSITIVE,0.9998513460159302
 use ful,5,2025-04-21,CBE,Google Play,use ful,neutral,neutral,NEGATIVE,0.9949980974197388
@@ -298,7 +294,6 @@ I like it.,5,2025-04-07,CBE,Google Play,like,neutral,positive,POSITIVE,0.9910564
 bugs,3,2025-04-07,CBE,Google Play,bug,neutral,neutral,NEGATIVE,0.9996434450149536
 commerial Bank,5,2025-04-06,CBE,Google Play,commerial bank,neutral,neutral,NEGATIVE,0.681026041507721
 Genat biru,2,2025-04-06,CBE,Google Play,genat biru,neutral,neutral,NEGATIVE,0.966159999370575
-🙏,5,2025-04-06,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 it is good but it doesn't allow screen shot,4,2025-04-06,CBE,Google Play,good allow screen shot,positive,positive,POSITIVE,0.9998487234115601
 the best one,5,2025-04-06,CBE,Google Play,best one,positive,positive,POSITIVE,0.999826967716217
 You need to copy many things from other bank apps like Amole(Dashen),2,2025-04-06,CBE,Google Play,need copy many thing bank apps like amole dashen,positive,positive,NEGATIVE,0.9868232011795044
@@ -337,7 +332,6 @@ very interesting app,5,2025-04-01,CBE,Google Play,interesting app,positive,posit
 i like it,5,2025-04-01,CBE,Google Play,like,neutral,positive,POSITIVE,0.9910564422607422
 wow.......cbe.....keep it up.....!!!!!!,5,2025-04-01,CBE,Google Play,wow cbe keep,positive,positive,POSITIVE,0.9987928867340088
 ጊዜን ቆጣቢ እና ህይወትን ቀለል ከሚያደርጉ ኢትዬጲያ ካሉ ፋይናንስ አፕልኬሽኖች ሁሉ ይሄ ይለያል,5,2025-04-01,CBE,Google Play,ጊዜን ቆጣቢ እና ህይወትን ቀለል ከሚያደርጉ ኢትዬጲያ ካሉ ፋይናንስ አፕልኬሽኖች ሁሉ ይሄ ይለያል,neutral,neutral,NEGATIVE,0.9510266780853271
-Excellent🙏app,5,2025-04-01,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 the most useful,5,2025-04-01,CBE,Google Play,useful,positive,positive,POSITIVE,0.9997634291648865
 I am more satisfied in this app . More sure you have to secure.,4,2025-04-01,CBE,Google Play,satisfied app sure secure,positive,positive,POSITIVE,0.9997169375419617
 Easy to use,5,2025-04-01,CBE,Google Play,easy use,positive,positive,POSITIVE,0.9884273409843445
@@ -432,7 +426,6 @@ The sum is good.,3,2025-03-30,CBE,Google Play,sum good,positive,positive,POSITIV
 best of bests,5,2025-03-30,CBE,Google Play,best best,positive,positive,POSITIVE,0.9998223185539246
 am happy thank you CBE🫡,5,2025-03-30,CBE,Google Play,happy thank,positive,positive,POSITIVE,0.9998639822006226
 it's very nice 👍.,5,2025-03-30,CBE,Google Play,nice,positive,positive,POSITIVE,0.9998552799224854
-👍,5,2025-03-30,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 "The history sometimes misses transactions, tranfer to cbe birr debited but not really transferred, We need to really cop up with the world for real. The hacks and security problems, invest on and solve them.",3,2025-03-30,CBE,Google Play,history sometimes miss transaction tranfer cbe birr debited really transferred need really cop world real hack security problem invest solve,positive,neutral,NEGATIVE,0.9973094463348389
 Very good,5,2025-03-30,CBE,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 halan garidhaa cbe,5,2025-03-30,CBE,Google Play,halan garidhaa cbe,neutral,neutral,POSITIVE,0.9760899543762207
@@ -473,7 +466,6 @@ cbe,5,2025-03-25,CBE,Google Play,cbe,neutral,neutral,POSITIVE,0.9966009855270386
 ممتاز جدا جدا,5,2025-03-24,CBE,Google Play,ممتاز جدا جدا,neutral,neutral,NEGATIVE,0.8608055114746094
 very nice and convenient app,5,2025-03-24,CBE,Google Play,nice convenient app,positive,positive,POSITIVE,0.9994218349456787
 there are to many bugs app keeps crashi ng and the update file seems to keep getting worse,2,2025-03-24,CBE,Google Play,many bug app keep crashi ng update file seems keep getting worse,positive,negative,NEGATIVE,0.99957674741745
-👍👍👍,5,2025-03-24,CBE,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Very good,5,2025-03-24,CBE,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 Great experience so far but why this app ain't working while developer mode is on?,4,2025-03-24,CBE,Google Play,great experience far app ai working developer mode,positive,positive,POSITIVE,0.9977847933769226
 why did the screen shot stopped ?????,3,2025-03-24,CBE,Google Play,screen shot stopped,neutral,negative,NEGATIVE,0.9994801878929138
@@ -499,7 +491,6 @@ wow to it saff and this app,5,2025-05-30,Dashen,Google Play,wow saff app,positiv
 it too slow,3,2025-05-29,Dashen,Google Play,slow,negative,neutral,NEGATIVE,0.9997313618659973
 ዳሽን ባንክ ይለያል,4,2025-05-28,Dashen,Google Play,ዳሽን ባንክ ይለያል,neutral,neutral,NEGATIVE,0.8337253928184509
 real life changer,5,2025-05-28,Dashen,Google Play,real life changer,positive,neutral,POSITIVE,0.9997788071632385
-👍👍👍,5,2025-05-28,Dashen,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 good,5,2025-05-28,Dashen,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 nice application,5,2025-05-27,Dashen,Google Play,nice application,positive,positive,POSITIVE,0.9998229146003723
 good,5,2025-05-27,Dashen,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
@@ -532,7 +523,6 @@ its my choice,5,2025-05-15,Dashen,Google Play,choice,neutral,neutral,POSITIVE,0.
 wow apo,5,2025-05-15,Dashen,Google Play,wow apo,positive,positive,POSITIVE,0.9994785189628601
 awesome app keep going,5,2025-05-14,Dashen,Google Play,awesome app keep going,positive,positive,POSITIVE,0.9998502731323242
 wow,5,2025-05-14,Dashen,Google Play,wow,positive,positive,POSITIVE,0.999592125415802
-👍,5,2025-05-14,Dashen,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 "It grows ethiopian digital banking step ahead.All fetures in one,simple fast and convince.",5,2025-05-14,Dashen,Google Play,grows ethiopian digital banking step fetures one simple fast convince,positive,positive,POSITIVE,0.9717165231704712
 Game changer,5,2025-05-13,Dashen,Google Play,game changer,negative,neutral,POSITIVE,0.9887570738792419
 Totally amazing,5,2025-05-13,Dashen,Google Play,totally amazing,positive,positive,POSITIVE,0.9998782873153687
@@ -1036,7 +1026,6 @@ The is not functional at all?,2,2025-02-12,BOA,Google Play,functional,neutral,ne
 Best bank,5,2025-02-08,BOA,Google Play,best bank,positive,positive,POSITIVE,0.9997438788414001
 Make it easy and convienient to use and perfect for all to high prefrence and choice.,3,2025-02-07,BOA,Google Play,make easy convienient use perfect high prefrence choice,positive,positive,POSITIVE,0.9919643402099609
 good,5,2025-02-05,BOA,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
-🇪🇹🇪🇹🇪🇹🇪🇹🇪🇹🇪🇹👍👍👍👍👍👍👍,5,2025-02-04,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 I have been using this app for two years.It is amazing.,5,2025-02-01,BOA,Google Play,using app two amazing,positive,positive,POSITIVE,0.9996744394302368
 Good 👍,5,2025-01-31,BOA,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 Sad experience,1,2025-01-30,BOA,Google Play,sad experience,negative,negative,NEGATIVE,0.9990687966346741
@@ -1048,12 +1037,10 @@ Beter,5,2025-01-21,BOA,Google Play,beter,neutral,neutral,POSITIVE,0.677195310592
 Boa,4,2025-01-18,BOA,Google Play,boa,neutral,neutral,NEGATIVE,0.7410537600517273
 በጣም የሚያስጠላ አፕ በጣም የወረደ ዜሮ ነው የምሰጠው ዘሮ It's not App it's very slow ehhhh. Why don't you upgrade the app???? It's always zero,1,2025-01-18,BOA,Google Play,በጣም የሚያስጠላ አፕ በጣም የወረደ ዜሮ ነው የምሰጠው ዘሮ app slow ehhhh upgrade app always zero,negative,neutral,NEGATIVE,0.9993040561676025
 Aadan Axmed Barkhadle,5,2025-01-17,BOA,Google Play,aadan axmed barkhadle,neutral,neutral,POSITIVE,0.6127511262893677
-😡😡😡🤬🤬🤬,1,2025-01-16,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Horrible customer service and app crashes Horrible!!,1,2025-01-15,BOA,Google Play,horrible customer service app crash horrible,negative,negative,NEGATIVE,0.9997979998588562
 I love it,5,2025-01-14,BOA,Google Play,love,positive,positive,POSITIVE,0.9998735189437866
 Best,5,2025-01-14,BOA,Google Play,best,positive,positive,POSITIVE,0.9997941851615906
 It keeps asking me to turn off developer mode even when dev mode is off. Couldn't use it.,1,2025-01-13,BOA,Google Play,keep asking turn developer mode even dev mode could use,neutral,neutral,NEGATIVE,0.9962765574455261
-Good🙏,5,2025-01-12,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Like to much,5,2025-01-11,BOA,Google Play,like much,positive,positive,POSITIVE,0.999556839466095
 Thank you,5,2025-01-10,BOA,Google Play,thank,neutral,positive,POSITIVE,0.9998283386230469
 Perfect,5,2025-01-09,BOA,Google Play,perfect,positive,positive,POSITIVE,0.9998517036437988
@@ -1108,14 +1095,12 @@ exellent digital transaction of money,5,2024-11-27,BOA,Google Play,exellent digi
 The latest update has stopped android 9 phones not to open this App. Never work properly since i started using it.,1,2024-11-26,BOA,Google Play,latest update stopped android 9 phone open app never work properly since started using,positive,negative,NEGATIVE,0.9993312358856201
 Best,5,2024-11-25,BOA,Google Play,best,positive,positive,POSITIVE,0.9997941851615906
 Great,5,2024-11-25,BOA,Google Play,great,positive,positive,POSITIVE,0.9998630285263062
-👏👏👏,5,2024-11-24,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Money,5,2024-11-24,BOA,Google Play,money,neutral,neutral,POSITIVE,0.9659324884414673
 It needs more improvment,2,2024-11-24,BOA,Google Play,need improvment,neutral,neutral,NEGATIVE,0.9674727320671082
 Hey Google,5,2024-11-21,BOA,Google Play,hey google,neutral,neutral,POSITIVE,0.9950044751167297
 Good app,5,2024-11-21,BOA,Google Play,good app,positive,positive,POSITIVE,0.9998493194580078
 ab,3,2024-11-20,BOA,Google Play,ab,neutral,neutral,POSITIVE,0.9603193998336792
 Ademtahir,5,2024-11-20,BOA,Google Play,ademtahir,neutral,neutral,POSITIVE,0.9930111765861511
-✌️✌️,5,2024-11-20,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Please this app on my android phone,3,2024-11-20,BOA,Google Play,please app android phone,neutral,positive,POSITIVE,0.9795334339141846
 GOAT 🐐 🐐,5,2024-11-19,BOA,Google Play,goat,neutral,neutral,NEGATIVE,0.9739651679992676
 "Your app doesn't match your bank, the app is disaster, super slow. Please learn something from tele birr app.",1,2024-11-19,BOA,Google Play,app match bank app disaster super slow please learn something tele birr app,positive,positive,NEGATIVE,0.9981170892715454
@@ -1123,7 +1108,6 @@ Fast and reliable,5,2024-11-18,BOA,Google Play,fast reliable,positive,neutral,PO
 "The worst app update ever. Why would you include the ""developer option off"" thing here? Why do you care? It is my phone my money, right? That is the reason why I switched to other banks. So either turn it off or everyone will discontinue their business one by one.",1,2024-11-17,BOA,Google Play,worst app update ever would include developer option thing care phone money right reason switched bank either turn everyone discontinue business one one,negative,negative,NEGATIVE,0.9997963309288025
 Very good,5,2024-11-14,BOA,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 One of the poorest mobile banking system,1,2024-11-13,BOA,Google Play,one poorest mobile banking system,neutral,negative,NEGATIVE,0.9997370839118958
-❤❤❤❤❤❤,5,2024-11-12,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Oene,5,2024-11-12,BOA,Google Play,oene,neutral,neutral,POSITIVE,0.8278863430023193
 i find it interesting specially in reciept downloading,1,2024-11-12,BOA,Google Play,find interesting specially reciept downloading,positive,positive,POSITIVE,0.9934403300285339
 it good,5,2024-11-12,BOA,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
@@ -1138,7 +1122,6 @@ The worst App i have never seen like this before,1,2024-11-12,BOA,Google Play,wo
 Wweeeer,4,2024-11-12,BOA,Google Play,wweeeer,neutral,neutral,NEGATIVE,0.8910734057426453
 Infinx,5,2024-11-12,BOA,Google Play,infinx,neutral,neutral,NEGATIVE,0.9042558670043945
 Great service,5,2024-11-12,BOA,Google Play,great service,positive,positive,POSITIVE,0.9998434782028198
-👍,5,2024-11-11,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 This app is not available on all android versions and some times it is not functional.,1,2024-11-08,BOA,Google Play,app available android version time functional,positive,neutral,POSITIVE,0.5150746703147888
 senayt Mesfin,4,2024-11-08,BOA,Google Play,senayt mesfin,neutral,neutral,POSITIVE,0.8874821066856384
 Bad app vety bad.,1,2024-11-07,BOA,Google Play,bad app vety bad,negative,negative,NEGATIVE,0.9998015761375427
@@ -1274,7 +1257,6 @@ Bad app .,1,2024-08-06,BOA,Google Play,bad app,negative,negative,NEGATIVE,0.9997
 Review,5,2024-08-06,BOA,Google Play,review,neutral,neutral,POSITIVE,0.9946893453598022
 Goood,4,2024-08-06,BOA,Google Play,goood,neutral,neutral,NEGATIVE,0.9943867921829224
 Ok,5,2024-08-06,BOA,Google Play,ok,positive,positive,POSITIVE,0.9997851252555847
-👎👎👎👎👎👎👎👎👎,1,2024-08-06,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Is it necessary to switch off developer options every time to use mobile banking?🤔🤔😡😡😡,1,2024-08-04,BOA,Google Play,necessary switch developer option every time use mobile banking,neutral,neutral,NEGATIVE,0.8661465644836426
 The previous version is better it doesn't work,1,2024-08-04,BOA,Google Play,previous version better work,positive,positive,POSITIVE,0.9890689253807068
 "I don't know what is wrong with BOA as a bank in general. It's been going backwards since last year or so. The app is a disaster to use in every possible way. Not stable to log in and very slow to perform transactions, couldn't take a screenshot (or can't even find the pictures even using its save screenshot option). Most of the time, it fails to perform transactions and so on. Simply, it's the worst!",1,2024-08-03,BOA,Google Play,know wrong boa bank general going backwards since last year app disaster use every possible way stable log slow perform transaction could take screenshot ca even find picture even using save screenshot option time fails perform transaction simply worst,negative,negative,NEGATIVE,0.9997175335884094
@@ -1329,13 +1311,10 @@ It is not working at all,1,2024-07-16,BOA,Google Play,working,neutral,neutral,PO
 Excellent,5,2024-07-16,BOA,Google Play,excellent,positive,positive,POSITIVE,0.9998434782028198
 The poorest mobile banking survice ever. Only error reports frequently,1,2024-07-16,BOA,Google Play,poorest mobile banking survice ever error report frequently,positive,negative,NEGATIVE,0.9995482563972473
 Wow,5,2024-07-16,BOA,Google Play,wow,positive,positive,POSITIVE,0.999592125415802
-😞😞😞😞,1,2024-07-16,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
-😡😡😡😡😡😡😡,1,2024-07-15,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 The worst banking app,1,2024-07-15,BOA,Google Play,worst banking app,negative,negative,NEGATIVE,0.9997982382774353
 The app is constantly crashing and freezing when to send to BOA customers' accounts.,1,2024-07-15,BOA,Google Play,app constantly crashing freezing send boa customer account,neutral,negative,NEGATIVE,0.9989535808563232
 No work app,5,2024-07-15,BOA,Google Play,work app,neutral,neutral,POSITIVE,0.9781266450881958
 Is ok but stop sundenly,5,2024-07-15,BOA,Google Play,ok stop sundenly,positive,neutral,NEGATIVE,0.9962334036827087
-🤷🤷🤷,3,2024-07-15,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 experienced,5,2024-07-14,BOA,Google Play,experienced,positive,neutral,POSITIVE,0.9950610995292664
 Very poor app. Its Always cresh and not compatible,2,2024-07-13,BOA,Google Play,poor app always cresh compatible,negative,negative,NEGATIVE,0.99956876039505
 "It's not functional at all. It keeps saying ""error"". Unable to activate.",1,2024-07-13,BOA,Google Play,functional keep saying error unable activate,negative,negative,NEGATIVE,0.9993909597396851
@@ -1365,7 +1344,6 @@ Very good app,5,2024-07-07,BOA,Google Play,good app,positive,positive,POSITIVE,0
 It usually crashes and unable to process also it request to off the developer options,1,2024-07-05,BOA,Google Play,usually crash unable process also request developer option,negative,negative,NEGATIVE,0.9953879714012146
 Miliyone.,5,2024-07-05,BOA,Google Play,miliyone,neutral,neutral,NEGATIVE,0.7075748443603516
 Workneh girmamo,5,2024-07-05,BOA,Google Play,workneh girmamo,neutral,neutral,POSITIVE,0.9400009512901306
-🙏🙏🙏,5,2024-07-05,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 "I can't believe in this day and age, one of the major banks of the country can't seem to understand that having a working mobile payment option is a **MUST** to survive. I have decided to move my accounts to CBE and Awash because of this. Can't be bothered with this useless app.",1,2024-07-04,BOA,Google Play,ca believe day age one major bank country ca seem understand working mobile payment option must survive decided move account cbe awash ca bothered useless app,negative,negative,NEGATIVE,0.999589741230011
 Is it even working these days? Please check it.,1,2024-07-04,BOA,Google Play,even working day please check,neutral,positive,POSITIVE,0.9987102746963501
 "The app is essentially unusable, it asks to disable developer mode even when it is already disabled and crashes, sometimes it only works with wifi and sometimes only with data, or it crashes just because.......",1,2024-07-04,BOA,Google Play,app essentially unusable asks disable developer mode even already disabled crash sometimes work wifi sometimes data crash,negative,negative,NEGATIVE,0.9983371496200562
@@ -1394,7 +1372,6 @@ It has become the most unreliable mibile banking app ever.,1,2024-06-16,BOA,Goog
 Good,5,2024-06-14,BOA,Google Play,good,positive,positive,POSITIVE,0.9998161196708679
 "አኘልኬሽኑ በሁሉም ነገር ጥሩ ነዉ,ነገር ግን Network በጣም ነዉ እሚያስቸገረው",2,2024-06-13,BOA,Google Play,አኘልኬሽኑ በሁሉም ነገር ጥሩ ነዉ ነገር ግን network በጣም ነዉ እሚያስቸገረው,neutral,neutral,NEGATIVE,0.9308202266693115
 The poorest mobile banking I have seen in the industry. Is not stable to login and post transactions. Is not attractive. Error reports frequently.,5,2024-06-13,BOA,Google Play,poorest mobile banking seen industry stable login post transaction attractive error report frequently,positive,negative,NEGATIVE,0.9994786381721497
-👍👍👍,5,2024-06-12,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 Really Bank,5,2024-06-12,BOA,Google Play,really bank,positive,neutral,POSITIVE,0.9820581078529358
 I like the the bank of Abyssinia is the best first bank of Ethiopia,1,2024-06-11,BOA,Google Play,like bank abyssinia best first bank ethiopia,positive,positive,POSITIVE,0.997333288192749
 The app is not good need a few work,3,2024-06-11,BOA,Google Play,app good need work,positive,positive,POSITIVE,0.9956809282302856
@@ -1411,7 +1388,6 @@ Developer option to be off really,1,2024-06-06,BOA,Google Play,developer option 
 Good app boa,5,2024-06-06,BOA,Google Play,good app boa,positive,positive,POSITIVE,0.9998428821563721
 I'm disappointed with the recent changes to this app. Disabling developer options for functionality seems unnecessary. The previous version offered a more user-friendly experience.,1,2024-06-06,BOA,Google Play,disappointed recent change app disabling developer option functionality seems unnecessary previous version offered experience,negative,negative,NEGATIVE,0.9997263550758362
 "Worest app, it cannot be downloaded",2,2024-06-05,BOA,Google Play,worest app downloaded,neutral,neutral,NEGATIVE,0.9383505582809448
-😭😭😭😭😭😭😭,1,2024-06-05,BOA,Google Play,,neutral,neutral,POSITIVE,0.748120903968811
 slow only some times the wey it is veary nice app,5,2024-06-05,BOA,Google Play,slow time wey veary nice app,positive,positive,POSITIVE,0.9959511756896973
 ok yes,5,2024-06-04,BOA,Google Play,ok yes,positive,positive,POSITIVE,0.9997628331184387
 The worst mobile banking app,1,2024-06-04,BOA,Google Play,worst mobile banking app,negative,negative,NEGATIVE,0.9997854828834534
