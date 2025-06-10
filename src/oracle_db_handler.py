@@ -1,5 +1,6 @@
 import pandas as pd
 import oracledb
+from datetime import datetime
 
 class OracleDBHandler:
     def __init__(self, user, password, dsn):
@@ -15,9 +16,33 @@ class OracleDBHandler:
     def connect(self):
         """Connect to Oracle"""
         try:
-            self.conn = oracledb.connect(user=self.user, password=self.password, dsn=self.dsn)
+            print(f"Attempting to connect with DSN: {self.dsn} as user: {self.user}")
+
+            # Correct way to connect as SYSDBA or SYSOPER in oracledb
+            if self.user.lower() == "sys":
+                # For SYS, you must specify the mode
+                # Use oracledb.SYSDBA mode for sysdba privileges
+                self.conn = oracledb.connect(
+                    user=self.user,
+                    password=self.password,
+                    dsn=self.dsn,
+                    mode=oracledb.SYSDBA # <--- THIS IS THE KEY CHANGE
+                )
+            else:
+                # For regular users
+                self.conn = oracledb.connect(
+                    user=self.user,
+                    password=self.password,
+                    dsn=self.dsn
+                )
+
             self.cursor = self.conn.cursor()
             print("✅ Connected to Oracle DB.")
+        except oracledb.Error as e:
+            # Catch specific oracledb errors for better handling
+            error_obj, = e.args
+            print(f"Oracle Error Code: {error_obj.code}")
+            print(f"Oracle Error Message: {error_obj.message}")
         except Exception as e:
             print(f"❌ Connection error: {e}")
             raise
@@ -54,56 +79,123 @@ class OracleDBHandler:
             self.conn.commit()
             print("✅ Schema created.")
         except Exception as e:
-            print(f"⚠️ Schema creation failed: {e}")
-            self.conn.rollback()
+            error_obj, = e.args
+            if error_obj.code == 955: # ORA-00955: name is already used by an existing object
+                print("⚠️ Schema already exists. Skipping creation.")
+                self.conn.rollback() # Still rollback the DDL attempt
+            else:
+                print(f"⚠️ Schema creation failed: {e}")
+                self.conn.rollback()
+                raise
 
-    def insert_banks(self, banks):
-        """Insert bank names and return a bank_id map"""
+    def insert_banks(self, banks_list):
+        """
+        Insert bank names and return a bank_id map (fallback using individual inserts for RETURNING)
+        """
         bank_map = {}
-        for bank in banks:
-            try:
-                self.cursor.execute(
-                    "INSERT INTO banks (name) VALUES (:1) RETURNING bank_id INTO :2",
-                    [bank, self.cursor.var(int)]
-                )
-                bank_id = self.cursor.fetchone()[0]
-                bank_map[bank] = bank_id
-            except oracledb.IntegrityError:
-                self.cursor.execute("SELECT bank_id FROM banks WHERE name = :name", {'name': bank})
-                bank_map[bank] = self.cursor.fetchone()[0]
-        self.conn.commit()
+        self.cursor.execute("SELECT name, bank_id FROM banks")
+        existing_banks = {row[0]: row[1] for row in self.cursor.fetchall()}
+
+        new_banks_to_insert = []
+        for bank_name in banks_list:
+            if bank_name not in existing_banks:
+                new_banks_to_insert.append(bank_name) # Just the name for individual insert
+            else:
+                bank_map[bank_name] = existing_banks[bank_name]
+
+        if new_banks_to_insert:
+            print(f"Inserting {len(new_banks_to_insert)} new banks individually...")
+            for bank_name in new_banks_to_insert:
+                try:
+                    # Create a variable to hold the returned ID for this single insert
+                    returned_id_var = self.cursor.var(int)
+                    self.cursor.execute(
+                        "INSERT INTO banks (name) VALUES (:1) RETURNING bank_id INTO :2",
+                        [bank_name, returned_id_var] # Pass the variable to receive the output
+                    )
+                    # Get the value from the bind variable, not fetchone()
+                    bank_id = returned_id_var.getvalue()[0]
+                    bank_map[bank_name] = bank_id
+                except oracledb.IntegrityError:
+                    # This could happen if another process inserted the bank between checks
+                    # Re-query to get the existing bank_id
+                    self.conn.rollback() # Rollback the failed insert
+                    self.cursor.execute("SELECT bank_id FROM banks WHERE name = :name", {'name': bank_name})
+                    bank_map[bank_name] = self.cursor.fetchone()[0]
+                except Exception as e:
+                    print(f"❌ Failed to insert bank '{bank_name}': {e}")
+                    self.conn.rollback()
+                    raise # Re-raise to stop if a critical error occurs
+
+            self.conn.commit()
+            print("New banks inserted and committed.")
+
+        print(f"Bank mapping complete for {len(banks_list)} unique banks.")
         return bank_map
 
     def insert_reviews(self, df: pd.DataFrame):
-        """Insert cleaned review data"""
-        bank_map = self.insert_banks(df['bank'].unique())
+        """Insert cleaned review data using executemany"""
+        bank_map = self.insert_banks(
+            df["bank"].unique().tolist()
+        )  # Ensure unique() returns a list for insert_banks
 
+        # Prepare data for executemany
+        data_to_insert = []
         for _, row in df.iterrows():
-            try:
-                self.cursor.execute("""
-                    INSERT INTO reviews (
-                        bank_id, review_text, cleaned_review, rating,
-                        sentiment_label, sentiment_score, theme, review_date, source
-                    )
-                    VALUES (
-                        :bank_id, :review, :cleaned_review, :rating,
-                        :sentiment_label, :sentiment_score, :theme, TO_DATE(:review_date, 'YYYY-MM-DD'), :source
-                    )
-                """, {
-                    'bank_id': bank_map[row['bank']],
-                    'review': row['review'],
-                    'cleaned_review': row['cleaned_review'],
-                    'rating': int(row['rating']),
-                    'sentiment_label': row['transformer_sentiment'],
-                    'sentiment_score': float(row['transformer_score']),
-                    'theme': row.get('theme', None),
-                    'review_date': row['date'],
-                    'source': row['source']
-                })
-            except Exception as e:
-                print(f"❌ Failed to insert row: {e}")
-        self.conn.commit()
-        print(f"📥 Inserted {len(df)} reviews.")
+            # Convert date string to datetime.date object
+            # Assuming 'date' column in DataFrame is in 'YYYY-MM-DD' string format
+            review_date_obj = (
+                datetime.strptime(str(row["date"]), "%Y-%m-%d").date()
+                if pd.notna(row["date"]) and isinstance(row["date"], str)
+                else None
+            )
+            if (
+                review_date_obj is None and pd.notna(row["date"])
+            ):  # if it's already datetime object
+                review_date_obj = (
+                    row["date"].date() if isinstance(row["date"], datetime) else None
+                )
+
+            # Ensure all values are correctly typed for oracledb
+            data_to_insert.append(
+                {
+                    "bank_id": bank_map.get(row["bank"]),  # Use .get() for safety
+                    "review": row["review"],
+                    "cleaned_review": row["cleaned_review"],
+                    "rating": int(row["rating"]),
+                    "sentiment_label": row["transformer_sentiment"],
+                    "sentiment_score": float(row["transformer_score"]),
+                    "theme": row.get("theme", None),  # Use .get() for optional columns
+                    "review_date": review_date_obj,  # Pass datetime object directly
+                    "source": row["source"],
+                }
+            )
+
+        if not data_to_insert:
+            print("No reviews to insert.")
+            return
+
+        print(f"Preparing to insert {len(data_to_insert)} reviews...")
+        try:
+            self.cursor.executemany(
+                """
+                INSERT INTO reviews (
+                    bank_id, review_text, cleaned_review, rating,
+                    sentiment_label, sentiment_score, theme, review_date, source
+                )
+                VALUES (
+                    :bank_id, :review, :cleaned_review, :rating,
+                    :sentiment_label, :sentiment_score, :theme, :review_date, :source
+                )
+            """,
+                data_to_insert,
+            )  # Pass list of dictionaries
+            self.conn.commit()
+            print(f"📥 Successfully inserted {len(df)} reviews.")
+        except Exception as e:
+            print(f"❌ Failed to insert reviews: {e}")
+            self.conn.rollback()  # Rollback the entire batch on error
+            raise  # Re-raise to see the full traceback if needed
 
     def fetch_reviews(self, limit=10):
         """Fetch limited number of reviews"""
