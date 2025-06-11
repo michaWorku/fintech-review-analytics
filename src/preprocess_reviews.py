@@ -1,5 +1,3 @@
-# src/preprocess_reviews.py
-
 import os
 import pandas as pd
 from glob import glob
